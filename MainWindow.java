@@ -1,16 +1,17 @@
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
-//Invoice section and customer list 
-
+// Customer list
 public class MainWindow {
 
-	public static void main(String[] args) {
-
+	
+	public static void main(String[] args){
+		
 		JFrame mw = new JFrame();
 		mw.setSize(800,600);
-		mw.add(new MainPanel());
+		mw.add(new CustomersPanel());
 		mw.setVisible(true);
-
+		
 	}
-
+	
 }
