@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
 
-// Customer list
 public class MainWindow {
 
 	
