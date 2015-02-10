@@ -19,7 +19,7 @@ public class CustomersPanel extends JPanel{
 	
 	public CustomersPanel(){
 		
-	customersList = new <String>ArrayList();
+	customersList = new <String>ArrayList(); // arraylist is for user
 		
 		setLayout(new GridLayout(2,1));
 		
@@ -37,7 +37,7 @@ public class CustomersPanel extends JPanel{
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				
-				customersList.add(addCustomerTF.getText());
+				customersList.add(addCustomerTF.getText()); // enter the user name
 				addCustomerTF.setText("");
 			}
 
@@ -53,7 +53,7 @@ public class CustomersPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
-				String deleteEntry = deleteCustomerTF.getText();
+				String deleteEntry = deleteCustomerTF.getText(); // delete user list
 				for(int i=customersList.size()-1;i>=0;i--){
 					if(customersList.get(i).equals(deleteEntry)){
 						customersList.remove(i);
@@ -75,7 +75,7 @@ public class CustomersPanel extends JPanel{
 				
 				jta.setText("");
 				int counter = 1;
-				for(String s : customersList){
+				for(String s : customersList){ // get text to show customer
 					
 					jta.setText(jta.getText() + counter + ". " + s + "\n");
 					counter++;
